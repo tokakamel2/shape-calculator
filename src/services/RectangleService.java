@@ -15,14 +15,24 @@ public class RectangleService {
         String choice = scanner.nextLine();
         switch (choice){
             case "1":
-                double area = calculateArea();
-                System.out.println("Your rectangle's area is:");
-                System.out.println(area);
+                try {
+                    double area = calculateArea();
+                    System.out.println("Your rectangle's area is:");
+                    System.out.println(area);
+                }catch (Exception exception){
+                    System.out.println("Invalid Input");
+                }
                 break;
             case "2":
-                double circumference =  calculateCircumference();
-                System.out.println("Your rectangle's circumference is:");
-                System.out.println(circumference);
+                try {
+                    double circumference =  calculateCircumference();
+                    System.out.println("Your rectangle's circumference is:");
+                    System.out.println(circumference);
+                }
+                catch (Exception exception){
+                    System.out.println("Invalid Input");
+                }
+
                 break;
             default:
                 System.out.println("Enter valid number choice");

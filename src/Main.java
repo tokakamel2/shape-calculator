@@ -40,6 +40,9 @@ public class Main {
                 displayMainMenu();
 
         }
+        System.out.println("Press Enter to go to main menu");
+        scanner.nextLine();
+        displayMainMenu();
     };
 
     public static void main(String[] args){
